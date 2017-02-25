@@ -18,6 +18,9 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 import java.util.Random;
 
+/**
+ * Main class de l'application
+ */
 public class MainActivity extends AppCompatActivity {
 
     ImageView myImageView;
@@ -51,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
     int[][] minesTab;
 
     @Override
+    /**
+     * @author Antoine
+     * @version 1.6
+     *
+     * Cette fonction est appelée à chaque création de l'instance de l'application
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -115,6 +124,12 @@ public class MainActivity extends AppCompatActivity {
 
     // onTouchEvent () method gets called when User performs any touch event on screen
     // Method to handle touch event like left to right swap and right to left swap
+    /**
+     * @params touchevent
+     *                  L'évènement qui va gérer l'appui sur l'écran
+     *
+     * Cette fonction va nous permettre de gérer les swipes
+     */
     public boolean onTouchEvent(MotionEvent touchevent)
     {
         switch (touchevent.getAction())
@@ -236,6 +251,10 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
     // Fonction qui permet de placer les mines dans le tableau
+
+    /**
+     * Permet de placer les mines dans notre tableau
+     */
     public void setMines(){
         Random r = new Random();
 
@@ -251,6 +270,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Permet d"intialiser les valeurs du tableau à 0
+     */
     public void initTab(){
 
         for (int i = 0; i < 20; i++) {
@@ -267,6 +289,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Fonction qui permet d'afficher les mines dans le tableau
+
+    /**
+     * Cette fonction nous permet d'afficher les mines du tableau
+     * @param color
+     *          La couleur renseignée permet d'afficher ou effacer les mines
+     */
     public void drawMines(Paint color){
         for (int i=0; i<20; i++){
             for (int j=0; j<20; j++){
@@ -281,6 +309,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Cette fonction permet d'effacer les mines après 3 secondes
+     * @see #drawMines(Paint)
+     */
     public void eraseMines(){
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -291,6 +323,13 @@ public class MainActivity extends AppCompatActivity {
         }, 3000);
     }
 
+    /**
+     * Cette fonction permet d'afficher le joueur à l'écran
+     * @param color
+     *          La couleur permet d'afficher le joueur de la couleur voulue
+     *          Bleue pour afficher le joueur
+     *          Blanche pour l'effacer
+     */
     public void drawPlayer(Paint color){
         drawingCanvas.drawRect(playerX * (width/columns), playerY * (height/rows),
                 playerX * (width/columns) + (width/columns),
@@ -298,12 +337,23 @@ public class MainActivity extends AppCompatActivity {
                 color);
     }
 
+    /**
+     * Permet l'utilisation de modulo
+     * @param x
+     * @param y
+     * @return Renvoie 0 si y est un diviseur de x
+     */
     private int mod(int x, int y)
     {
         int result = x % y;
         return result < 0? result + y : result;
     }
 
+    /**
+     * Permet d'afficher un popup à l'écran
+     * @param message
+     *          String du message à afficher
+     */
     private void alert(String message)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -327,6 +377,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Permet de relancer l'application
+     */
     private void restartApp(){
         Intent i = getBaseContext().getPackageManager()
                 .getLaunchIntentForPackage( getBaseContext().getPackageName() );
