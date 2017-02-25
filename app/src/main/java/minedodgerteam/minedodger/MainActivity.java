@@ -17,7 +17,9 @@ import android.view.Display;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 import java.util.Random;
-
+/**
+*Main activity de l'application
+*/
 public class MainActivity extends AppCompatActivity {
 
     ImageView myImageView;
