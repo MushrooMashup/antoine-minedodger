@@ -17,10 +17,16 @@ import android.view.Display;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 import java.util.Random;
+<<<<<<< HEAD
 
 /**
  * Main class de l'application
  */
+=======
+/**
+*Main activity de l'application
+*/
+>>>>>>> 48f43027b9da6cb645eb825331676fd54e51b21c
 public class MainActivity extends AppCompatActivity {
 
     ImageView myImageView;
