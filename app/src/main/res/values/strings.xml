@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MineDodger</string>
+    <string name="menuJouer">Jouer</string>
+    <string name="menuOptions">Options</string>
+    <string name="menuClassement">Classement</string>
+    <string name="menuConnexion">Connexion</string>
+    <string name="menuQuitter">Quitter</string>
 </resources>

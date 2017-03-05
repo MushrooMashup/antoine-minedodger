@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="@string/menuJouer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jouer"
+        android:onClick="onClickJouerListener"
+        android:visibility="visible" />
+
+    <Button
+        android:text="@string/menuClassement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classement"
+        android:visibility="visible" />
+
+    <Button
+        android:text="@string/menuOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/options"
+        android:visibility="visible" />
+
+    <Button
+        android:text="@string/menuConnexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Connexion"
+        android:visibility="visible" />
+
+    <Button
+        android:text="@string/menuQuitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quitter" />
+</LinearLayout>
