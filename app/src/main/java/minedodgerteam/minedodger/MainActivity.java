@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     int level = 1;
     int nbMines = 4;
 
-    int[][] minesTab;
+    Integer[][] minesTab;
 
     @Override
     /**
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         height = size.y;
 
         // On initialise le tableau
-        minesTab = new int[20][20];
+        minesTab = new Integer[20][20];
         initTab();
 
         // On initialise la position du joueur
@@ -111,10 +111,12 @@ public class MainActivity extends AppCompatActivity {
         drawingCanvas.drawRect(0, 0, width / columns, height / rows, lastCase);
 
         drawPlayer(playerColor);
-
+        // On génère le chemin et pose les mines
+        while (!generationChemin());
         setMines();
 
         drawMines(mineColor);
+        drawPath();
 
         myImageView.setImageBitmap(drawingBitmap);
 
@@ -213,8 +215,10 @@ public class MainActivity extends AppCompatActivity {
             initTab();
             drawingCanvas.drawRect(0, 0, width / columns, height / rows, lastCase);
             drawPlayer(playerColor);
+            while(!generationChemin());
             setMines();
             drawMines(mineColor);
+            drawPath();
 
             // On redessine les lignes
             for (int i = 0; i <= width; i += width / columns) {
@@ -258,14 +262,18 @@ public class MainActivity extends AppCompatActivity {
      */
     public void setMines(){
         Random r = new Random();
+        boolean minePosee;
 
         for (int i = 0; i < nbMines; i++) {
+            minePosee = false;
+            while (!minePosee) {
+                int xMine = r.nextInt(columns);
+                int yMine = r.nextInt(rows);
 
-            int xMine = r.nextInt(columns);
-            int yMine = r.nextInt(rows);
-
-            if (minesTab[xMine][yMine] == 0) {
-                minesTab[xMine][yMine] = -1;
+                if (minesTab[xMine][yMine] == 0) {
+                    minesTab[xMine][yMine] = -1;
+                    minePosee = true;
+                }
             }
         }
 
@@ -282,11 +290,51 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        minesTab[0][0] = 1;
+        minesTab[0][0] = 2;
 
-        minesTab[playerX][playerY] = 1;
+        minesTab[columns - 1][rows - 1] = 1;
 
 
+    }
+
+    /**
+     * Fonction qui génère un chemin aléatoire
+     * @return Retourne un booléen, true si le chemin trouvé est valide, false sinon.
+     */
+    public boolean generationChemin(){
+        int x = columns - 1;
+        int y = rows - 1;
+        int newX, newY;
+        int tailleMax = columns * rows - nbMines;
+        int nbCasesParcourues = 1;
+        Random r = new Random();
+        int direction;
+        while ((x != 0) && (y != 0)){
+            direction = r.nextInt(100);
+            if (direction < 40){
+                // Left 40%
+                newX = x-1;
+                newY = y;
+            } else if(direction < 80) {
+                // Up 40%
+                newX = x;
+                newY = y-1;
+            } else {
+                // Right 20%
+                newX = x+1;
+                newY = y;
+            }
+            // Si la case existe
+            if(minesTab[newX][newY] != null){
+                x = newX;
+                y = newY;
+                if (minesTab[x][y] != 1) {
+                    minesTab[x][y] = 1;
+                    nbCasesParcourues++;
+                }
+            }
+        }
+        return (nbCasesParcourues < tailleMax);
     }
 
     // Fonction qui permet d'afficher les mines dans le tableau
@@ -305,6 +353,24 @@ public class MainActivity extends AppCompatActivity {
                             i * (width / columns) + (width / columns),
                             j * (height / rows) + (height / rows),
                             color);
+                }
+            }
+        }
+    }
+
+    /**
+     * Cette fonction permet de tester si le chemin est créé en affichant le chemin
+     * Seulement utile en période de développement.
+     */
+    public void drawPath(){
+        for (int i=0; i<20; i++){
+            for (int j=0; j<20; j++){
+                if (minesTab[i][j] == 1) {
+
+                    drawingCanvas.drawRect(i * (width / columns), j * (height / rows),
+                            i * (width / columns) + (width / columns),
+                            j * (height / rows) + (height / rows),
+                            lastCase);
                 }
             }
         }
