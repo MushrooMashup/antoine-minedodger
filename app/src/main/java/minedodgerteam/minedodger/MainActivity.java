@@ -20,8 +20,9 @@ import java.util.Random;
 
 
 /**
-*Main activity de l'application
-*/
+ *Main activity de l'application
+ * @author Antoine
+ */
 public class MainActivity extends AppCompatActivity {
 
     ImageView myImageView;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     /**
      * @author Antoine
-     * @version 1.6
+     * @version 1
      *
      * Cette fonction est appelée à chaque création de l'instance de l'application
      */

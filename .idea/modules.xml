@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
-=======
->>>>>>> aef713389088d105bb0d8c758be5c1eedcce9fb2
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/minedodger.iml" filepath="$PROJECT_DIR$/minedodger.iml" />
     </modules>
   </component>
 </project>

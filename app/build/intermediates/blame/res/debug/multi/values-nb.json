@@ -1,410 +1,6 @@
 [
     {
-        "outputFile": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 107,
-                    "endOffset": 158
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 107,
-                        "endOffset": 158
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 163,
-                    "endColumn": 108,
-                    "endOffset": 267
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 163,
-                        "endColumn": 108,
-                        "endOffset": 267
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 272,
-                    "endColumn": 124,
-                    "endOffset": 392
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 272,
-                        "endColumn": 124,
-                        "endOffset": 392
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 397,
-                    "endColumn": 94,
-                    "endOffset": 487
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 397,
-                        "endColumn": 94,
-                        "endOffset": 487
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 492,
-                    "endColumn": 113,
-                    "endOffset": 601
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 492,
-                        "endColumn": 113,
-                        "endOffset": 601
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 606,
-                    "endColumn": 85,
-                    "endOffset": 687
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 606,
-                        "endColumn": 85,
-                        "endOffset": 687
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 692,
-                    "endColumn": 99,
-                    "endOffset": 787
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 692,
-                        "endColumn": 99,
-                        "endOffset": 787
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 792,
-                    "endColumn": 112,
-                    "endOffset": 900
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 792,
-                        "endColumn": 112,
-                        "endOffset": 900
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 905,
-                    "endColumn": 75,
-                    "endOffset": 976
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 905,
-                        "endColumn": 75,
-                        "endOffset": 976
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 981,
-                    "endColumn": 75,
-                    "endOffset": 1052
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 981,
-                        "endColumn": 75,
-                        "endOffset": 1052
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1057,
-                    "endColumn": 79,
-                    "endOffset": 1132
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1057,
-                        "endColumn": 79,
-                        "endOffset": 1132
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1137,
-                    "endColumn": 102,
-                    "endOffset": 1235
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1137,
-                        "endColumn": 102,
-                        "endOffset": 1235
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1240,
-                    "endColumn": 98,
-                    "endOffset": 1334
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1240,
-                        "endColumn": 98,
-                        "endOffset": 1334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1339,
-                    "endColumn": 95,
-                    "endOffset": 1430
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1339,
-                        "endColumn": 95,
-                        "endOffset": 1430
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1435,
-                    "endColumn": 103,
-                    "endOffset": 1534
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1435,
-                        "endColumn": 103,
-                        "endOffset": 1534
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1539,
-                    "endColumn": 97,
-                    "endOffset": 1632
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1539,
-                        "endColumn": 97,
-                        "endOffset": 1632
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1637,
-                    "endColumn": 100,
-                    "endOffset": 1733
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1637,
-                        "endColumn": 100,
-                        "endOffset": 1733
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1738,
-                    "endColumn": 115,
-                    "endOffset": 1849
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1738,
-                        "endColumn": 115,
-                        "endOffset": 1849
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1854,
-                    "endColumn": 96,
-                    "endOffset": 1946
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1854,
-                        "endColumn": 96,
-                        "endOffset": 1946
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1951,
-                    "endColumn": 78,
-                    "endOffset": 2025
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1951,
-                        "endColumn": 78,
-                        "endOffset": 2025
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2030,
-                    "endColumn": 100,
-                    "endOffset": 2126
-                },
-                "from": {
-                    "file": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2030,
-                        "endColumn": 100,
-                        "endOffset": 2126
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
+        "outputFile": "/home/antoine/MineDodger/Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml",
         "map": [
             {
                 "to": {
@@ -415,7 +11,7 @@
                     "endOffset": 208
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -434,7 +30,7 @@
                     "endOffset": 317
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -453,7 +49,7 @@
                     "endOffset": 442
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -472,7 +68,7 @@
                     "endOffset": 537
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -491,7 +87,7 @@
                     "endOffset": 651
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -510,7 +106,7 @@
                     "endOffset": 737
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -529,7 +125,7 @@
                     "endOffset": 837
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -548,7 +144,7 @@
                     "endOffset": 950
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -567,7 +163,7 @@
                     "endOffset": 1026
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -586,7 +182,7 @@
                     "endOffset": 1102
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -605,7 +201,7 @@
                     "endOffset": 1182
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -624,7 +220,7 @@
                     "endOffset": 1285
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -643,7 +239,7 @@
                     "endOffset": 1384
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -662,7 +258,7 @@
                     "endOffset": 1480
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -681,7 +277,7 @@
                     "endOffset": 1584
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -700,7 +296,7 @@
                     "endOffset": 1682
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -719,7 +315,7 @@
                     "endOffset": 1783
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -738,7 +334,7 @@
                     "endOffset": 1899
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -757,7 +353,7 @@
                     "endOffset": 1996
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -776,7 +372,7 @@
                     "endOffset": 2265
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -795,7 +391,7 @@
                     "endOffset": 2394
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -814,7 +410,7 @@
                     "endOffset": 2585
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -833,7 +429,7 @@
                     "endOffset": 2713
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -852,7 +448,7 @@
                     "endOffset": 2846
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -871,7 +467,7 @@
                     "endOffset": 3069
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -890,7 +486,7 @@
                     "endOffset": 3296
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -909,7 +505,7 @@
                     "endOffset": 3428
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -928,7 +524,7 @@
                     "endOffset": 3600
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -947,7 +543,7 @@
                     "endOffset": 3719
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -966,7 +562,7 @@
                     "endOffset": 3891
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -985,7 +581,7 @@
                     "endOffset": 4011
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1004,7 +600,7 @@
                     "endOffset": 4146
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1023,7 +619,7 @@
                     "endOffset": 4316
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -1042,7 +638,7 @@
                     "endOffset": 4444
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -1061,7 +657,7 @@
                     "endOffset": 4627
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -1080,7 +676,7 @@
                     "endOffset": 4754
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -1099,7 +695,7 @@
                     "endOffset": 5003
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values-nb\\common_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-nb/common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1118,7 +714,7 @@
                     "endOffset": 5254
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1137,7 +733,7 @@
                     "endOffset": 5379
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1156,7 +752,7 @@
                     "endOffset": 5488
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -1175,7 +771,7 @@
                     "endOffset": 5680
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1194,7 +790,7 @@
                     "endOffset": 5810
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1213,7 +809,7 @@
                     "endOffset": 6011
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1232,7 +828,7 @@
                     "endOffset": 6145
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1251,7 +847,7 @@
                     "endOffset": 6351
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1270,7 +866,7 @@
                     "endOffset": 6447
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -1289,7 +885,7 @@
                     "endOffset": 6539
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -1308,7 +904,7 @@
                     "endOffset": 6647
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-nb\\base_strings.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-nb/base_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -1327,7 +923,7 @@
                     "endOffset": 6726
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1346,7 +942,7 @@
                     "endOffset": 6827
                 },
                 "from": {
-                    "file": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-nb\\values-nb.xml",
+                    "file": "/home/antoine/MineDodger/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-nb/values-nb.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
