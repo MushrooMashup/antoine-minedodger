@@ -135,10 +135,13 @@ public class MainActivity extends AppCompatActivity {
     // onTouchEvent () method gets called when User performs any touch event on screen
     // Method to handle touch event like left to right swap and right to left swap
     /**
+     * Cette fonction est une surcharge d'une fonction basique d'Android
+     * Elle est modifiée pour nous permettre de gérer les "swipes"
+     *
      * @params touchevent
      *                  L'évènement qui va gérer l'appui sur l'écran
+     * @return Return un booléen, true quand l'écran est appuyé, false sinon
      *
-     * Cette fonction va nous permettre de gérer les swipes
      */
     public boolean onTouchEvent(MotionEvent touchevent)
     {
@@ -195,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (minesTab[playerX][playerY] == -1){
             alert("Perdu ! Tu as marché sur une mine ! \n    Clique ici pour recommencer !");
-            restartApp();
+            restartActivity();
         }
 
         if (playerX == 0 && playerY == 0){
@@ -396,6 +399,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 drawMines(erase);
+                // On affiche les lignes à nouveau pour corriger un bug d'affichage
+                for (int i = 0; i <= width; i += width / columns) {
+                    drawingCanvas.drawLine(i, 0, i, height, lines);
+                }
+                for (int j = 0; j <= height; j += height / rows) {
+                    drawingCanvas.drawLine(0, j, width, j, lines);
+                }
+                // affichage des modifs
+                myImageView.setImageBitmap(drawingBitmap);
+                // Le joueur peut se déplacer
                 canMove = true;
             }
         }, 3000);
@@ -456,7 +469,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Permet de relancer l'activité contenant l'écran de jeu
+     * Est appelé lors de la défaite du joueur et remplace restartApp()
+     * @see #restartApp()
+     */
+    private void restartActivity(){
+        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    /**
      * Permet de relancer l'application
+     * This function is deprecated
+     * @see #restartActivity()
      */
     private void restartApp(){
         Intent i = getBaseContext().getPackageManager()
