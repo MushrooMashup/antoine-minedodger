@@ -32,11 +32,9 @@ public class OptionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_options);
 
         String[] langues = new String[2];
-        String[0] = "Français";
-        String[1] = "English";
+        langues[0] = "Français";
+        langues[1] = "English";
 
         Spinner languesSpinner = (Spinner) findViewById(R.id.spinner);
-
-        languesSpinner.
     }
 }

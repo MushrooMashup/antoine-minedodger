@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         setMines();
 
         drawMines(mineColor);
-        drawPath();
+        //drawPath();
 
         myImageView.setImageBitmap(drawingBitmap);
 
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (minesTab[playerX][playerY] == -1){
-            alert("Perdu ! Tu as marché sur une mine ! \n    Clique ici pour recommencer !");
+            alert("Perdu ! Tu as marché sur une mine ! \n Clique ici pour recommencer ! \n Tu as atteint le niveau "+level+" en "+nbCasesJoueur+" déplacements !");
             restartActivity();
         }
 
@@ -245,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
             while(!generationChemin());
             setMines();
             drawMines(mineColor);
-            drawPath();
+            //drawPath();
             score.setText("Score : "+level);
             textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
 

@@ -591,7 +591,6 @@ int drawable notification_template_icon_low_bg 0x7f020088
 int drawable notification_tile_bg 0x7f020085
 int drawable notify_panel_notification_icon_bg 0x7f020086
 int id Connexion 0x7f0b0065
-int id Langue 0x7f0b006a
 int id Notifications 0x7f0b0068
 int id Son 0x7f0b0069
 int id action0 0x7f0b006e
@@ -693,6 +692,7 @@ int id showCustom 0x7f0b000f
 int id showHome 0x7f0b0010
 int id showTitle 0x7f0b0011
 int id spacer 0x7f0b0037
+int id spinner 0x7f0b006a
 int id split_action_bar 0x7f0b0007
 int id src_atop 0x7f0b0016
 int id src_in 0x7f0b0017

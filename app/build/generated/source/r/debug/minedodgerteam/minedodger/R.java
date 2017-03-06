@@ -1964,7 +1964,6 @@ containing a value of this type.
     }
     public static final class id {
         public static final int Connexion=0x7f0b0065;
-        public static final int Langue=0x7f0b006a;
         public static final int Notifications=0x7f0b0068;
         public static final int Son=0x7f0b0069;
         public static final int action0=0x7f0b006e;
@@ -2066,6 +2065,7 @@ containing a value of this type.
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
         public static final int spacer=0x7f0b0037;
+        public static final int spinner=0x7f0b006a;
         public static final int split_action_bar=0x7f0b0007;
         public static final int src_atop=0x7f0b0016;
         public static final int src_in=0x7f0b0017;
