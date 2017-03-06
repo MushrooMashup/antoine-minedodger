@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView myImageView;
     TextView score;
+    TextView textCases;
+    int nbCasesJoueur = 0;
 
     Point size = new Point();
 
@@ -76,7 +78,10 @@ public class MainActivity extends AppCompatActivity {
         myImageView.setBackgroundColor(Color.WHITE);
 
         score = (TextView) findViewById(R.id.text);
-        score.setText("Score :"+level);
+        score.setText("Score : "+level);
+
+        textCases = (TextView) findViewById(R.id.text2);
+        textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
 
         Display display = getWindowManager().getDefaultDisplay();
 
@@ -165,6 +170,9 @@ public class MainActivity extends AppCompatActivity {
                             drawPlayer(erase);
                             playerX += 1;
                             drawPlayer(playerColor);
+                            nbCasesJoueur++;
+                            textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
+
                         }
                         break;
                     } else if (x1 - x2 >= width / 5) // if right to left sweep event on screen
@@ -173,6 +181,9 @@ public class MainActivity extends AppCompatActivity {
                             drawPlayer(erase);
                             playerX -= 1;
                             drawPlayer(playerColor);
+                            nbCasesJoueur++;
+                            textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
+
                         }
                         break;
                     } else if (y2 - y1 >= height / 10) // if UP to Down sweep event on screen
@@ -181,6 +192,9 @@ public class MainActivity extends AppCompatActivity {
                             drawPlayer(erase);
                             playerY += 1;
                             drawPlayer(playerColor);
+                            nbCasesJoueur++;
+                            textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
+
                         }
                         break;
                     } else if (y1 - y2 >= height / 10) //if Down to UP sweep event on screen
@@ -189,6 +203,9 @@ public class MainActivity extends AppCompatActivity {
                             drawPlayer(erase);
                             playerY -= 1;
                             drawPlayer(playerColor);
+                            nbCasesJoueur++;
+                            textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
+
                         }
                         break;
                     }
@@ -229,7 +246,9 @@ public class MainActivity extends AppCompatActivity {
             setMines();
             drawMines(mineColor);
             drawPath();
-            score.setText("Score :"+level);
+            score.setText("Score : "+level);
+            textCases.setText ("Nombre de cases parcourues : "+nbCasesJoueur);
+
 
 
             // On redessine les lignes

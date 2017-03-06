@@ -17,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+import android.widget.Spinner;
 
 import java.util.Random;
 
@@ -29,5 +30,13 @@ public class OptionsActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
+
+        String[] langues = new String[2];
+        String[0] = "Français";
+        String[1] = "English";
+
+        Spinner languesSpinner = (Spinner) findViewById(R.id.spinner);
+
+        languesSpinner.
     }
 }

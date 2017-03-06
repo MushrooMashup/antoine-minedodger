@@ -16,14 +16,21 @@ public class MenuActivity extends Activity {
         setContentView(R.layout.activity_menu);
 
          final Button jouerButton = (Button) findViewById(R.id.jouer);
-
          jouerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+         });
 
-  @Override
-  public void onClick(View v) {
-    Intent intent = new Intent(MenuActivity.this, MainActivity.class);
-    startActivity(intent);
-    }
-});
+         final Button optionsButton = (Button) findViewById(R.id.options);
+         optionsButton.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(MenuActivity.this, OptionsActivity.class);
+                 startActivity(intent);
+             }
+         });
     }
 }
