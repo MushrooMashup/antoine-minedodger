@@ -1,32 +1,29 @@
 package minedodgerteam.minedodger;
 
 import android.app.Activity;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
+import android.view.View;
+import android.widget.Button;
 
 /**
  * Created by Eric Longueville on 02/03/2017.
  */
 public class MenuActivity extends Activity {
+     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu);
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Menu Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-HTTP-HOST-HERE]/menu"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
+         final Button jouerButton = (Button) findViewById(R.id.jouer);
+
+         jouerButton.setOnClickListener(new View.OnClickListener() {
+
+  @Override
+  public void onClick(View v) {
+    Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+    startActivity(intent);
+    }
+});
     }
 }

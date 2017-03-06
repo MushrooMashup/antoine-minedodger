@@ -16,6 +16,8 @@ import android.graphics.Canvas;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import java.util.Random;
 
 
@@ -26,6 +28,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     ImageView myImageView;
+    TextView score;
 
     Point size = new Point();
 
@@ -71,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
         // On met le fond de l'appli en blanc
         myImageView = (ImageView) findViewById(R.id.image);
         myImageView.setBackgroundColor(Color.WHITE);
+
+        score = (TextView) findViewById(R.id.text);
+        score.setText("Score :"+level);
 
         Display display = getWindowManager().getDefaultDisplay();
 
@@ -220,6 +226,8 @@ public class MainActivity extends AppCompatActivity {
             setMines();
             drawMines(mineColor);
             drawPath();
+            score.setText("Score :"+level);
+
 
             // On redessine les lignes
             for (int i = 0; i <= width; i += width / columns) {
@@ -310,23 +318,23 @@ public class MainActivity extends AppCompatActivity {
         int nbCasesParcourues = 1;
         Random r = new Random();
         int direction;
-        while ((x != 0) && (y != 0)){
+        while (true){
             direction = r.nextInt(100);
             if (direction < 40){
                 // Left 40%
                 newX = x-1;
                 newY = y;
-            } else if(direction < 80) {
-                // Up 40%
+            } else if(direction < 75) {
+                // Up 35%
                 newX = x;
                 newY = y-1;
             } else {
-                // Right 20%
+                // Right 25%
                 newX = x+1;
                 newY = y;
             }
             // Si la case existe
-            if(minesTab[newX][newY] != null){
+            if(newX >= 0 && newX < columns && newY >= 0){
                 x = newX;
                 y = newY;
                 if (minesTab[x][y] != 1) {
@@ -334,6 +342,8 @@ public class MainActivity extends AppCompatActivity {
                     nbCasesParcourues++;
                 }
             }
+            if(x == 0 && y == 0)
+                break;
         }
         return (nbCasesParcourues < tailleMax);
     }

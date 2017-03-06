@@ -25,5 +25,9 @@ import java.util.Random;
 *Main activity de l'application
 */
 public class OptionsActivity extends AppCompatActivity {
-
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_options);
+    }
 }
