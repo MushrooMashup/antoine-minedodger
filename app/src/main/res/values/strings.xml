@@ -1,8 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MineDodger</string>
     <string name="menuJouer">Jouer</string>
     <string name="menuOptions">Options</string>
     <string name="menuClassement">Classement</string>
     <string name="menuConnexion">Connexion</string>
-    <string name="menuQuitter">Quitter</string>
+    <string name="menuQuitter">Quitter</string>>
+    <string name="optionsPartieLangue">Langue</string>
+    <string name="optionsPartieSon">Son</string>>
+    <string name="optionsSonJoueur">Son du personnage</string>>
+    <string name="optionsSonEnvironnement">Son de l'environnement</string>
+
+    <string name="menuJouerEN">Play</string>
+    <string name="menuOptionsEN">Options</string>
+    <string name="menuClassementEN">Rankings</string>
+    <string name="menuConnexionEN">Connection</string>
+    <string name="menuQuitterEN">Leave game</string>>
+    <string name="optionsPartieLangueEN">Language</string>
+    <string name="optionsPartieSonEN">Sound</string>>
+    <string name="optionsSonJoueurEN">Character sound</string>>
+    <string name="optionsSonEnvironnementEN">Environnement sound</string>
+
+    <string-array name="listeLangues">
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
+
 </resources>

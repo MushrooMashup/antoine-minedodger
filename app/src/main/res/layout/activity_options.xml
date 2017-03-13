@@ -19,13 +19,29 @@
         android:id="@+id/Notifications"
         android:checked="true" />
 
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
+    <TextView
+        android:text="@string/optionsPartieSon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="10"
-        android:progress="3"
-        android:id="@+id/Son" />
+        android:id="@+id/optionsPartieSon" />
+
+    <CheckBox
+        android:text="@string/optionsSonJoueur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sonJoueur" />
+
+    <CheckBox
+        android:text="@string/optionsSonEnvironnement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sonJeu" />
+
+    <TextView
+        android:text="@string/optionsPartieLangue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
 
     <Spinner
         android:layout_width="match_parent"

@@ -23,8 +23,8 @@ import java.util.Random;
 
 
 /**
-*Main activity de l'application
-*/
+ * Created by Eric Longueville on 02/03/2017.
+ */
 public class OptionsActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,5 +36,12 @@ public class OptionsActivity extends AppCompatActivity {
         langues[1] = "English";
 
         Spinner languesSpinner = (Spinner) findViewById(R.id.spinner);
+        //ArrayAdapter à partir des ressources
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                                                                             R.array.listeLangues_array,
+                                                                             android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //Appliquer le tout
+        spinner.setAdapter(adapter);
     }
 }
