@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="listeLangues">
+        <item>Français</item>
+        <item>English</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -414,14 +418,23 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="menuClassement">Classement</string>
+    <string name="menuClassementEN">Rankings</string>
     <string name="menuConnexion">Connexion</string>
+    <string name="menuConnexionEN">Connection</string>
     <string name="menuJouer">Jouer</string>
+    <string name="menuJouerEN">Play</string>
     <string name="menuOptions">Options</string>
+    <string name="menuOptionsEN">Options</string>
     <string name="menuQuitter">Quitter</string>
+    <string name="menuQuitterEN">Leave game</string>
     <string name="optionsPartieLangue">Langue</string>
+    <string name="optionsPartieLangueEN">Language</string>
     <string name="optionsPartieSon">Son</string>
+    <string name="optionsPartieSonEN">Sound</string>
     <string name="optionsSonEnvironnement">Son de l'environnement</string>
+    <string name="optionsSonEnvironnementEN">Environnement sound</string>
     <string name="optionsSonJoueur">Son du personnage</string>
+    <string name="optionsSonJoueurEN">Character sound</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

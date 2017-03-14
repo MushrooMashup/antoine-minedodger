@@ -1,6 +1,7 @@
 package minedodgerteam.minedodger;
 
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -42,6 +43,6 @@ public class OptionsActivity extends AppCompatActivity {
                                                                              android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Appliquer le tout
-        spinner.setAdapter(adapter);
+        languesSpinner.setAdapter(adapter);
     }
 }

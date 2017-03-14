@@ -9,7 +9,9 @@
     <string name="optionsPartieLangue">Langue</string>
     <string name="optionsPartieSon">Son</string>>
     <string name="optionsSonJoueur">Son du personnage</string>>
-    <string name="optionsSonEnvironnement">Son de l'environnement</string>
+    <string name="optionsSonEnvironnement">Son de l\'environnement</string>
+    <string name="notifications">Notifications On/Off</string>
+    <string name="optionsTitre">Options</string>
 
     <string name="menuJouerEN">Play</string>
     <string name="menuOptionsEN">Options</string>
@@ -21,7 +23,8 @@
     <string name="optionsSonJoueurEN">Character sound</string>>
     <string name="optionsSonEnvironnementEN">Environnement sound</string>
 
-    <string-array name="listeLangues">
+    <string-array
+        name="listeLangues">
         <item>Français</item>
         <item>English</item>
     </string-array>

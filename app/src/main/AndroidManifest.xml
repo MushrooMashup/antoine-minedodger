@@ -23,7 +23,6 @@
             android:name=".OptionsActivity"
             android:screenOrientation="portrait"
             android:label="Options" />
-
     </application>
 
 </manifest>

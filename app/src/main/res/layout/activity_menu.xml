@@ -28,13 +28,6 @@
         android:visibility="visible" />
 
     <Button
-        android:text="@string/menuConnexion"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:id="@+id/Connexion"
-        android:visibility="visible" />
-
-    <Button
         android:text="@string/menuQuitter"
         android:layout_width="match_parent"
         android:layout_height="85dp"
