@@ -31,18 +31,5 @@ public class OptionsActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
-
-        String[] langues = new String[2];
-        langues[0] = "Français";
-        langues[1] = "English";
-
-        Spinner languesSpinner = (Spinner) findViewById(R.id.spinner);
-        //ArrayAdapter à partir des ressources
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                                                                             R.array.listeLangues_array,
-                                                                             android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //Appliquer le tout
-        languesSpinner.setAdapter(adapter);
     }
 }

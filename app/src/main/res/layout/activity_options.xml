@@ -12,14 +12,6 @@
         android:textStyle="normal|bold"
         android:textSize="24sp" />
 
-    <CheckBox
-        android:text="@string/notifications"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Notifications"
-        android:checked="true"
-        android:focusable="false" />
-
     <TextView
         android:text="@string/optionsPartieSon"
         android:layout_width="match_parent"
@@ -52,5 +44,5 @@
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@string/listeLangues" />
+        android:entries="@string-array/listeLangues" />
 </LinearLayout>

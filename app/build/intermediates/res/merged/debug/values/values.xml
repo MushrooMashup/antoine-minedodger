@@ -427,14 +427,16 @@
     <string name="menuOptionsEN">Options</string>
     <string name="menuQuitter">Quitter</string>
     <string name="menuQuitterEN">Leave game</string>
+    <string name="notifications">Notifications On/Off</string>
     <string name="optionsPartieLangue">Langue</string>
     <string name="optionsPartieLangueEN">Language</string>
     <string name="optionsPartieSon">Son</string>
     <string name="optionsPartieSonEN">Sound</string>
-    <string name="optionsSonEnvironnement">Son de l'environnement</string>
+    <string name="optionsSonEnvironnement">Son de l\'environnement</string>
     <string name="optionsSonEnvironnementEN">Environnement sound</string>
     <string name="optionsSonJoueur">Son du personnage</string>
     <string name="optionsSonJoueurEN">Character sound</string>
+    <string name="optionsTitre">Options</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

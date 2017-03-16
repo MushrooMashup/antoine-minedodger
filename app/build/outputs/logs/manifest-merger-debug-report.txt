@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidMani
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:5:5-27:19
+ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\AndroidManifest.xml:23:5-20
