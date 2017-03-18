@@ -56,16 +56,16 @@
         "source": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\abc_tint_edittext.xml"
     },
     {
         "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
         "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\abc_tint_edittext.xml"
+        "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
@@ -100,16 +100,16 @@
         "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
+        "merged": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\home\\antoine\\MineDodger\\Android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\EscalusEcthelion\\Desktop\\minedodger\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
