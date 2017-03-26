@@ -26,9 +26,15 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Random;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.AdapterView.OnItemSelectedListener;
+import java.io;
 
 
 /**
@@ -51,9 +57,104 @@ public class OptionsActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
 
-        sonJoueurBool = false;
-        sonEnvironnementBool = false;
-        langue = "Français";
+        //ici, on regarde le contenu du fichier pour le son du joueur et on remplit la variable avec ce contenu
+        String eo1 = System.getProperty("line.separator");
+        BufferedReader input = null;
+        try
+        {
+            input = new BufferedReader(new InputStreamReader(openFileInput("ficSon")));
+            StringBuffer buffer = new StringBuffer();
+            String sonJoueurString;
+            while((sonJoueurString = input.readLine())!= null)
+            {
+                buffer.append(sonJoueurString + eo1);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input != null)
+            {
+                try
+                {
+                    input.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonJoueurBool = (boolean sonJoueurString);
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo1 = System.getProperty("line.separator");
+        BufferedReader input = null;
+        try
+        {
+            input = new BufferedReader(new InputStreamReader(openFileInput("ficEnv")));
+            StringBuffer buffer = new StringBuffer();
+            String sonEnvironnementString;
+            while((sonEnvironnementString = input.readLine())!= null)
+            {
+                buffer.append(sonJoueurString + eo1);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input != null)
+            {
+                try
+                {
+                    input.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonEnvironnementBool = (boolean sonJoueurString);
+
+
+        //ici, on regarde le contenu du fichier pour la langue et on remplit la variable avec ce contenu
+        String eo1 = System.getProperty("line.separator");
+        BufferedReader input = null;
+        try
+        {
+            input = new BufferedReader(new InputStreamReader(openFileInput("ficLangue")));
+            StringBuffer buffer = new StringBuffer();
+            while((langue = input.readLine())!= null)
+            {
+                buffer.append(sonJoueurString + eo1);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input != null)
+            {
+                try
+                {
+                    input.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+    }
 
         choixLangue = (Spinner) findViewById(R.id.spinner);
         choixLangue.setOnItemSelectedListener (new LangueChoisie());

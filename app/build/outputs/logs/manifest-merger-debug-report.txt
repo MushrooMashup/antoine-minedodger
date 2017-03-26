@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidMani
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:5:5-30:19
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\AndroidManifest.xml:23:5-20
@@ -66,6 +66,13 @@ ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidMani
 		ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:25:13-36
 	android:name
 		ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:23:13-44
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:27:9-29:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:29:13-66
+	android:name
+		ADDED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml:28:13-58
 uses-sdk
 INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:21:5-23:78
@@ -88,9 +95,3 @@ MERGED from [com.android.support:support-compat:25.1.0] C:\Users\EscalusEcthelio
 	android:minSdkVersion
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\EscalusEcthelion\Desktop\minedodger\app\src\main\AndroidManifest.xml
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:23:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\EscalusEcthelion\Desktop\minedodger\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:22:13-58
