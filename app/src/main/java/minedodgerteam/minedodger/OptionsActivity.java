@@ -9,12 +9,17 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.AdapterView;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.FileOutputStream;
+import java.lang.String;
+import java.io.FileNotFoundException;
+
+
 
 
 /**
@@ -156,6 +161,23 @@ public class OptionsActivity extends AppCompatActivity
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
         {
             langue = choixLangue.getSelectedItem().toString();
+            //Maintenant, il faut écrire dans le fichier
+            FileOutputStream output;
+            try
+            {
+                output = openFileOutput("ficLangue", MODE_PRIVATE);
+                output.write(langue.getBytes());
+                if(output != null)
+                    output.close();
+            }
+            catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
         }
 
         @Override
@@ -172,6 +194,23 @@ public class OptionsActivity extends AppCompatActivity
         public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatJoueur)
         {
             sonJoueurBool = nouveauEtatJoueur;
+            //Maintenant, il faut écrire dans le fichier
+            FileOutputStream output;
+            try
+            {
+                output = openFileOutput("ficSon", MODE_PRIVATE);
+                output.write(String.valueOf(sonJoueurBool).getBytes());
+                if(output != null)
+                    output.close();
+            }
+            catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -181,6 +220,23 @@ public class OptionsActivity extends AppCompatActivity
         public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatEnvironnement)
         {
             sonEnvironnementBool = nouveauEtatEnvironnement;
+            //Maintenant, il faut écrire dans le fichier
+            FileOutputStream output;
+            try
+            {
+                output = openFileOutput("ficEnv", MODE_PRIVATE);
+                output.write(String.valueOf(sonEnvironnementBool).getBytes());
+                if(output != null)
+                    output.close();
+            }
+            catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 }
