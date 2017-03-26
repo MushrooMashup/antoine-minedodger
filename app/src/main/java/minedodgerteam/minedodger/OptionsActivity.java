@@ -1,40 +1,20 @@
 package minedodgerteam.minedodger;
 
 
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Point;
-import android.net.Uri;
+
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Display;
-import android.view.MotionEvent;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.Spinner;
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
-
+import android.widget.ArrayAdapter;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Random;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.AdapterView.OnItemSelectedListener;
-import java.io;
+import android.widget.AdapterView;
 
 
 /**
@@ -50,6 +30,8 @@ public class OptionsActivity extends AppCompatActivity
     public Spinner choixLangue;
     public CheckBox sonJoueur;
     public CheckBox sonEnvironnement;
+    String sonJoueurString;
+    String sonEnvironnementString;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -64,7 +46,6 @@ public class OptionsActivity extends AppCompatActivity
         {
             input = new BufferedReader(new InputStreamReader(openFileInput("ficSon")));
             StringBuffer buffer = new StringBuffer();
-            String sonJoueurString;
             while((sonJoueurString = input.readLine())!= null)
             {
                 buffer.append(sonJoueurString + eo1);
@@ -88,20 +69,19 @@ public class OptionsActivity extends AppCompatActivity
                 }
             }
         }
-        sonJoueurBool = (boolean sonJoueurString);
+        sonJoueurBool = Boolean.parseBoolean(sonJoueurString);
 
 
         //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
-        String eo1 = System.getProperty("line.separator");
-        BufferedReader input = null;
+        String eo2 = System.getProperty("line.separator");
+        BufferedReader input2 = null;
         try
         {
-            input = new BufferedReader(new InputStreamReader(openFileInput("ficEnv")));
+            input2 = new BufferedReader(new InputStreamReader(openFileInput("ficEnv")));
             StringBuffer buffer = new StringBuffer();
-            String sonEnvironnementString;
-            while((sonEnvironnementString = input.readLine())!= null)
+            while((sonEnvironnementString = input2.readLine())!= null)
             {
-                buffer.append(sonJoueurString + eo1);
+                buffer.append(sonJoueurString + eo2);
             }
         }
         catch (Exception e)
@@ -110,11 +90,11 @@ public class OptionsActivity extends AppCompatActivity
         }
         finally
         {
-            if (input != null)
+            if (input2 != null)
             {
                 try
                 {
-                    input.close();
+                    input2.close();
                 }
                 catch (IOException IOE)
                 {
@@ -122,19 +102,19 @@ public class OptionsActivity extends AppCompatActivity
                 }
             }
         }
-        sonEnvironnementBool = (boolean sonJoueurString);
+        sonEnvironnementBool = Boolean.parseBoolean(sonEnvironnementString);
 
 
         //ici, on regarde le contenu du fichier pour la langue et on remplit la variable avec ce contenu
-        String eo1 = System.getProperty("line.separator");
-        BufferedReader input = null;
+        String eo3 = System.getProperty("line.separator");
+        BufferedReader input3 = null;
         try
         {
-            input = new BufferedReader(new InputStreamReader(openFileInput("ficLangue")));
+            input3 = new BufferedReader(new InputStreamReader(openFileInput("ficLangue")));
             StringBuffer buffer = new StringBuffer();
-            while((langue = input.readLine())!= null)
+            while((langue = input3.readLine())!= null)
             {
-                buffer.append(sonJoueurString + eo1);
+                buffer.append(sonJoueurString + eo3);
             }
         }
         catch (Exception e)
@@ -143,11 +123,11 @@ public class OptionsActivity extends AppCompatActivity
         }
         finally
         {
-            if (input != null)
+            if (input3 != null)
             {
                 try
                 {
-                    input.close();
+                    input3.close();
                 }
                 catch (IOException IOE)
                 {
@@ -158,6 +138,10 @@ public class OptionsActivity extends AppCompatActivity
 
         choixLangue = (Spinner) findViewById(R.id.spinner);
         choixLangue.setOnItemSelectedListener (new LangueChoisie());
+        //Remplissage de la liste déroulante avec le tableau de chaines de caractères du fichier strings.xml
+        ArrayAdapter <CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.listeLangues,android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        choixLangue.setAdapter(adapter);
 
         sonJoueur = (CheckBox) findViewById(R.id.sonJoueur);
         sonJoueur.setOnCheckedChangeListener (new SonJoueurListener());
@@ -169,27 +153,34 @@ public class OptionsActivity extends AppCompatActivity
     public class LangueChoisie implements OnItemSelectedListener
     {
         @Override
-        public void onItemSelectedListener ()
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
         {
-            langue = choixLangue.getSelectedItem();
+            langue = choixLangue.getSelectedItem().toString();
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent)
+        {
+            // TODO Auto-generated method stub
+            //Pas besoin de faire quoi que ce soit, cette fonction a été créée pour pallier à la possibilité "aucun item sélectionné" et éviter une erreur de compilation
         }
     }
 
     public class SonJoueurListener implements OnCheckedChangeListener
     {
         @Override
-        public void onCheckedChanged (CompoundButton buttonView, boolean sonJoueurBool)
+        public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatJoueur)
         {
-            sonJoueurBool = true;
+            sonJoueurBool = nouveauEtatJoueur;
         }
     }
 
     public class SonEnvironnementListener implements OnCheckedChangeListener
     {
         @Override
-        public void onCheckedChanged (CompoundButton buttonView, boolean sonEnvironnementBool)
+        public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatEnvironnement)
         {
-            sonEnvironnementBool = true;
+            sonEnvironnementBool = nouveauEtatEnvironnement;
         }
     }
 }
