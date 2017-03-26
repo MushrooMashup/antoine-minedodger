@@ -41,6 +41,11 @@ public class OptionsActivity extends AppCompatActivity
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
+        /**
+         * @author Eric Longueville
+         *
+         * Cette fonction est appellée lorsque le joueur clique sur Options et affiche la page d'options avec ses composants initialisés
+         */
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
 
@@ -160,6 +165,11 @@ public class OptionsActivity extends AppCompatActivity
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
         {
+            /**
+             * @author Eric Longueville
+             *
+             * Cette fonction est appellée lorsque le joueur choisit une autre langue et inscrit son choix dans un fichier nommé ficLangue
+             */
             langue = choixLangue.getSelectedItem().toString();
             //Maintenant, il faut écrire dans le fichier
             FileOutputStream output;
@@ -183,8 +193,12 @@ public class OptionsActivity extends AppCompatActivity
         @Override
         public void onNothingSelected(AdapterView<?> parent)
         {
+            /**
+             * @author Eric Longueville
+             *
+             * Cette fonction a été créée pour pallier à la possibilité "aucun item sélectionné" et éviter une erreur de compilation
+             */
             // TODO Auto-generated method stub
-            //Pas besoin de faire quoi que ce soit, cette fonction a été créée pour pallier à la possibilité "aucun item sélectionné" et éviter une erreur de compilation
         }
     }
 
@@ -193,6 +207,11 @@ public class OptionsActivity extends AppCompatActivity
         @Override
         public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatJoueur)
         {
+            /**
+             * @author Eric Longueville
+             *
+             * Cette fonction est appellée lorsque le joueur coche ou décoche l'option correspondant au son de son personnage et inscrit son choix dans un fichier nommé ficLangue
+             */
             sonJoueurBool = nouveauEtatJoueur;
             //Maintenant, il faut écrire dans le fichier
             FileOutputStream output;
@@ -219,6 +238,11 @@ public class OptionsActivity extends AppCompatActivity
         @Override
         public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatEnvironnement)
         {
+            /**
+             * @author Eric Longueville
+             *
+             * Cette fonction est appellée lorsque le joueur coche ou décoche l'option correspondant au son de l'environnement et inscrit son choix dans un fichier nommé ficLangue
+             */
             sonEnvironnementBool = nouveauEtatEnvironnement;
             //Maintenant, il faut écrire dans le fichier
             FileOutputStream output;
