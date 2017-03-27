@@ -5,24 +5,28 @@
     <string name="menuOptions">Options</string>
     <string name="menuClassement">Classement</string>
     <string name="menuConnexion">Connexion</string>
-    <string name="menuQuitter">Quitter</string>>
+    <string name="menuQuitter">Quitter</string>
     <string name="optionsPartieLangue">Langue</string>
-    <string name="optionsPartieSon">Son</string>>
-    <string name="optionsSonJoueur">Son du personnage</string>>
-    <string name="optionsSonEnvironnement">Son de l\'environnement</string>
+    <string name="optionsPartieSon">Son</string>
+    <string name="optionsSonMusique">Son de la musique</string>
+    <string name="optionsSonJoueur">Son du personnage</string>
+    <string name="optionsSonExplosion">Son des explosions</string>
+    <string name="optionsSonLvlUp">Son du passage au niveau suivant</string>
     <string name="optionsTitre">Options</string>
+
     <string name="menuJouerEN">Play</string>
     <string name="menuOptionsEN">Options</string>
     <string name="menuClassementEN">Rankings</string>
     <string name="menuConnexionEN">Connection</string>
-    <string name="menuQuitterEN">Leave game</string>>
+    <string name="menuQuitterEN">Leave game</string>
     <string name="optionsPartieLangueEN">Language</string>
-    <string name="optionsPartieSonEN">Sound</string>>
-    <string name="optionsSonJoueurEN">Character sound</string>>
-    <string name="optionsSonEnvironnementEN">Environnement sound</string>
+    <string name="optionsPartieSonEN">Sound</string>
+    <string name="optionsSonJoueurEN">Character sound</string>
+    <string name="optionsSonMusiqueEN">Music activation</string>
+    <string name="optionsSonExplosionEN">SoExplosion sound</string>
+    <string name="optionsSonLvlUpEN">Level up sound</string>
 
-    <string-array
-        name="listeLangues">
+    <string-array name="listeLangues">
         <item>Français</item>
         <item>English</item>
     </string-array>

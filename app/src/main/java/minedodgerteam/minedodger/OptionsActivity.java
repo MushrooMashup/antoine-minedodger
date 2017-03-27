@@ -29,14 +29,22 @@ import java.io.FileNotFoundException;
 public class OptionsActivity extends AppCompatActivity
 {
 
-    public boolean sonJoueurBool;
-    public boolean sonEnvironnementBool;
-    public String langue;
+    public boolean sonJoueurBool; //etat du son du joueur
+    public boolean sonExplosionBool; //etat du son des explosions
+    public boolean sonLvlUpBool; //etat du son du passage au niveau suivant
+    public boolean sonMusiqueBool; //etat de la musique
+
+    public String langue; //langue de l'application
     public Spinner choixLangue;
     public CheckBox sonJoueur;
-    public CheckBox sonEnvironnement;
-    String sonJoueurString;
-    String sonEnvironnementString;
+    public CheckBox sonExplosion;
+    public CheckBox lvlUp;
+    public CheckBox sonMusique;
+
+    public String sonJoueurString; //variable utilisée dans le onCreate
+    public String sonMusiqueString; //variable utilisée dans le onCreate
+    public String sonExplosionString; //variable utilisée dans le onCreate
+    public String sonLvlUpString; //variable utilisée dans le onCreate
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -87,11 +95,11 @@ public class OptionsActivity extends AppCompatActivity
         BufferedReader input2 = null;
         try
         {
-            input2 = new BufferedReader(new InputStreamReader(openFileInput("ficEnv")));
+            input2 = new BufferedReader(new InputStreamReader(openFileInput("ficExplo")));
             StringBuffer buffer = new StringBuffer();
-            while((sonEnvironnementString = input2.readLine())!= null)
+            while((sonExplosionString = input2.readLine())!= null)
             {
-                buffer.append(sonJoueurString + eo2);
+                buffer.append(sonExplosionString + eo2);
             }
         }
         catch (Exception e)
@@ -112,7 +120,8 @@ public class OptionsActivity extends AppCompatActivity
                 }
             }
         }
-        sonEnvironnementBool = Boolean.parseBoolean(sonEnvironnementString);
+        sonExplosionBool = Boolean.parseBoolean(sonExplosionString);
+
 
 
         //ici, on regarde le contenu du fichier pour la langue et on remplit la variable avec ce contenu
@@ -124,7 +133,7 @@ public class OptionsActivity extends AppCompatActivity
             StringBuffer buffer = new StringBuffer();
             while((langue = input3.readLine())!= null)
             {
-                buffer.append(sonJoueurString + eo3);
+                buffer.append(langue + eo3);
             }
         }
         catch (Exception e)
@@ -144,7 +153,73 @@ public class OptionsActivity extends AppCompatActivity
                     IOE.printStackTrace();
                 }
             }
-    }
+             }
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo4 = System.getProperty("line.separator");
+        BufferedReader input4 = null;
+        try
+        {
+            input4 = new BufferedReader(new InputStreamReader(openFileInput("ficMusique")));
+            StringBuffer buffer = new StringBuffer();
+            while((sonMusiqueString = input4.readLine())!= null)
+            {
+                buffer.append(sonMusiqueString + eo4);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input4 != null)
+            {
+                try
+                {
+                   input4.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonMusiqueBool = Boolean.parseBoolean(sonMusiqueString);
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo5 = System.getProperty("line.separator");
+        BufferedReader input5 = null;
+        try
+        {
+            input5 = new BufferedReader(new InputStreamReader(openFileInput("ficLvlUp")));
+            StringBuffer buffer = new StringBuffer();
+            while((sonLvlUpString = input5.readLine())!= null)
+            {
+                buffer.append(sonLvlUpString + eo5);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input5 != null)
+            {
+                try
+                {
+                    input5.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonLvlUpBool = Boolean.parseBoolean(sonLvlUpString);
 
         choixLangue = (Spinner) findViewById(R.id.spinner);
         choixLangue.setOnItemSelectedListener (new LangueChoisie());
@@ -156,8 +231,14 @@ public class OptionsActivity extends AppCompatActivity
         sonJoueur = (CheckBox) findViewById(R.id.sonJoueur);
         sonJoueur.setOnCheckedChangeListener (new SonJoueurListener());
 
-        sonEnvironnement = (CheckBox) findViewById(R.id.sonJeu);
-        sonEnvironnement.setOnCheckedChangeListener (new SonEnvironnementListener());
+        sonExplosion = (CheckBox) findViewById(R.id.sonExplosion);
+        sonExplosion.setOnCheckedChangeListener (new SonExplosionListener());
+
+        sonMusique = (CheckBox) findViewById(R.id.sonMusique);
+        sonMusique.setOnCheckedChangeListener (new sonMusiqueListener());
+
+        lvlUp = (CheckBox) findViewById(R.id.sonLvlUp);
+        lvlUp.setOnCheckedChangeListener (new SonLvlUpListener());
     }
 
     public class LangueChoisie implements OnItemSelectedListener
@@ -233,23 +314,85 @@ public class OptionsActivity extends AppCompatActivity
         }
     }
 
-    public class SonEnvironnementListener implements OnCheckedChangeListener
+    public class sonMusiqueListener implements OnCheckedChangeListener
     {
         @Override
-        public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatEnvironnement)
+        public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatMusique)
         {
             /**
              * @author Eric Longueville
              *
-             * Cette fonction est appellée lorsque le joueur coche ou décoche l'option correspondant au son de l'environnement et inscrit son choix dans un fichier nommé ficLangue
+             * Cette fonction est appellée lorsque le joueur coche ou décoche l'option correspondant au son de la musique et inscrit son choix dans un fichier nommé ficLangue
              */
-            sonEnvironnementBool = nouveauEtatEnvironnement;
+            sonMusiqueBool = nouveauEtatMusique;
             //Maintenant, il faut écrire dans le fichier
             FileOutputStream output;
             try
             {
-                output = openFileOutput("ficEnv", MODE_PRIVATE);
-                output.write(String.valueOf(sonEnvironnementBool).getBytes());
+                output = openFileOutput("ficMusique", MODE_PRIVATE);
+                output.write(String.valueOf(sonMusiqueBool).getBytes());
+                if(output != null)
+                    output.close();
+            }
+            catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public class SonLvlUpListener implements OnCheckedChangeListener
+    {
+        @Override
+        public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatLvlUp)
+        {
+            /**
+             * @author Eric Longueville
+             *
+             * Cette fonction est appellée lorsque le joueur coche ou décoche l'option correspondant au son de passage au niveau suivant et inscrit son choix dans un fichier nommé ficLangue
+             */
+            sonLvlUpBool = nouveauEtatLvlUp;
+            //Maintenant, il faut écrire dans le fichier
+            FileOutputStream output;
+            try
+            {
+                output = openFileOutput("ficLvlUp", MODE_PRIVATE);
+                output.write(String.valueOf(sonLvlUpBool).getBytes());
+                if(output != null)
+                    output.close();
+            }
+            catch (FileNotFoundException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public class SonExplosionListener implements OnCheckedChangeListener
+    {
+        @Override
+        public void onCheckedChanged (CompoundButton buttonView, boolean nouveauEtatLvlUp)
+        {
+            /**
+             * @author Eric Longueville
+             *
+             * Cette fonction est appellée lorsque le joueur coche ou décoche l'option correspondant au son des explosions et inscrit son choix dans un fichier nommé ficLangue
+             */
+            sonExplosionBool = nouveauEtatLvlUp;
+            //Maintenant, il faut écrire dans le fichier
+            FileOutputStream output;
+            try
+            {
+                output = openFileOutput("ficExplo", MODE_PRIVATE);
+                output.write(String.valueOf(sonExplosionBool).getBytes());
                 if(output != null)
                     output.close();
             }

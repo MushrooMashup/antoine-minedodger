@@ -27,12 +27,26 @@
         android:focusable="false" />
 
     <CheckBox
-        android:text="@string/optionsSonEnvironnement"
+        android:text="@string/optionsSonExplosion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sonJeu"
+        android:id="@+id/sonExplosion"
         android:checked="true"
         android:focusable="false" />
+
+    <CheckBox
+        android:text="@string/optionsSonLvlUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:id="@+id/sonLvlUp" />
+
+    <CheckBox
+        android:text="@string/optionsSonMusique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sonMusique"
+        android:checked="true" />
 
     <TextView
         android:text="@string/optionsPartieLangue"
