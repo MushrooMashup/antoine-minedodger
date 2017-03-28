@@ -6,8 +6,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
+import android.media.AudioAttributes;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +23,14 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Random;
+
+import static android.media.AudioAttributes.CONTENT_TYPE_SONIFICATION;
 
 
 /**
@@ -57,6 +69,20 @@ public class MainActivity extends AppCompatActivity {
 
     int level = 1;
     int nbMines = 4;
+
+    public boolean sonJoueurBool; //etat du son du joueur
+    public boolean sonExplosionBool; //etat du son des explosions
+    public boolean sonLvlUpBool; //etat du son du passage au niveau suivant
+    public boolean sonMusiqueBool; //etat de la musique
+
+    public String sonJoueurString;
+    public String sonMusiqueString;
+    public String sonExplosionString;
+    public String sonLvlUpString;
+    public String langue;
+    public String highscoreString;
+
+    int highscore;
 
     Integer[][] minesTab;
 
@@ -135,6 +161,205 @@ public class MainActivity extends AppCompatActivity {
         alert("Pour les prochains niveaux, les mines vont disparaitre après 3s. \n" +
                 "Bonne chance. ");
 
+
+
+        //ici, on regarde le contenu du fichier pour le son du joueur et on remplit la variable avec ce contenu
+        String eo1 = System.getProperty("line.separator");
+        BufferedReader input = null;
+        try
+        {
+            input = new BufferedReader(new InputStreamReader(openFileInput("ficSon")));
+            StringBuffer buffer = new StringBuffer();
+            while((sonJoueurString = input.readLine())!= null)
+            {
+                buffer.append(sonJoueurString + eo1);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input != null)
+            {
+                try
+                {
+                    input.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonJoueurBool = Boolean.parseBoolean(sonJoueurString);
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo2 = System.getProperty("line.separator");
+        BufferedReader input2 = null;
+        try
+        {
+            input2 = new BufferedReader(new InputStreamReader(openFileInput("ficExplo")));
+            StringBuffer buffer = new StringBuffer();
+            while((sonExplosionString = input2.readLine())!= null)
+            {
+                buffer.append(sonExplosionString + eo2);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input2 != null)
+            {
+                try
+                {
+                    input2.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonExplosionBool = Boolean.parseBoolean(sonExplosionString);
+
+
+
+        //ici, on regarde le contenu du fichier pour la langue et on remplit la variable avec ce contenu
+        String eo3 = System.getProperty("line.separator");
+        BufferedReader input3 = null;
+        try
+        {
+            input3 = new BufferedReader(new InputStreamReader(openFileInput("ficLangue")));
+            StringBuffer buffer = new StringBuffer();
+            while((langue = input3.readLine())!= null)
+            {
+                buffer.append(langue + eo3);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input3 != null)
+            {
+                try
+                {
+                    input3.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo4 = System.getProperty("line.separator");
+        BufferedReader input4 = null;
+        try
+        {
+            input4 = new BufferedReader(new InputStreamReader(openFileInput("ficMusique")));
+            StringBuffer buffer = new StringBuffer();
+            while((sonMusiqueString = input4.readLine())!= null)
+            {
+                buffer.append(sonMusiqueString + eo4);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input4 != null)
+            {
+                try
+                {
+                    input4.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonMusiqueBool = Boolean.parseBoolean(sonMusiqueString);
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo5 = System.getProperty("line.separator");
+        BufferedReader input5 = null;
+        try
+        {
+            input5 = new BufferedReader(new InputStreamReader(openFileInput("ficLvlUp")));
+            StringBuffer buffer = new StringBuffer();
+            while((sonLvlUpString = input5.readLine())!= null)
+            {
+                buffer.append(sonLvlUpString + eo5);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input5 != null)
+            {
+                try
+                {
+                    input5.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        sonLvlUpBool = Boolean.parseBoolean(sonLvlUpString);
+
+
+        //ici, on regarde le contenu du fichier pour le son de l'environnement et on remplit la variable avec ce contenu
+        String eo6 = System.getProperty("line.separator");
+        BufferedReader input6 = null;
+        try
+        {
+            input6 = new BufferedReader(new InputStreamReader(openFileInput("ficHighscore")));
+            StringBuffer buffer = new StringBuffer();
+            while((highscoreString = input6.readLine())!= null)
+            {
+                buffer.append(highscoreString + eo6);
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            if (input6 != null)
+            {
+                try
+                {
+                    input6.close();
+                }
+                catch (IOException IOE)
+                {
+                    IOE.printStackTrace();
+                }
+            }
+        }
+        highscore = Integer.parseInt(highscoreString);
+
     }
 
     // onTouchEvent () method gets called when User performs any touch event on screen
@@ -148,6 +373,7 @@ public class MainActivity extends AppCompatActivity {
      * @return Return un booléen, true quand l'écran est appuyé, false sinon
      *
      */
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public boolean onTouchEvent(MotionEvent touchevent)
     {
         switch (touchevent.getAction())
@@ -214,12 +440,59 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         if (minesTab[playerX][playerY] == -1){
-            alert("Perdu ! Tu as marché sur une mine ! \n Clique ici pour recommencer ! \n Tu as atteint le niveau "+level+" en "+nbCasesJoueur+" déplacements !");
+            if (sonExplosionBool)
+            {
+                AudioAttributes attributes = new AudioAttributes.Builder()
+                        .setUsage(AudioAttributes.USAGE_GAME)
+                        .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                        .build();
+                SoundPool soundPool = new SoundPool.Builder()
+                        .setAudioAttributes(attributes)
+                        .build();
+                int son = soundPool.load("Boom.wav", 1);
+                soundPool.play(son, 1, 1, 0, 0, 1);
+                soundPool.release();
+            }
+            if (level > highscore)
+            {
+                highscore = level;
+                //Maintenant, il faut écrire dans le fichier
+                FileOutputStream output;
+                try
+                {
+                    output = openFileOutput("ficHighscore", MODE_PRIVATE);
+                    output.write(highscore);
+                    if(output != null)
+                        output.close();
+                }
+                catch (FileNotFoundException e)
+                {
+                    e.printStackTrace();
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+            alert("Perdu ! Tu as marché sur une mine ! \n Clique ici pour recommencer ! \n Ton score est "+level+" \n Ton meilleur score est "+highscore);
             restartActivity();
         }
 
         if (playerX == 0 && playerY == 0){
             level++;
+            if (sonLvlUpBool)
+            {
+                AudioAttributes attributes = new AudioAttributes.Builder()
+                        .setUsage(AudioAttributes.USAGE_GAME)
+                        .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                        .build();
+                SoundPool soundPool = new SoundPool.Builder()
+                        .setAudioAttributes(attributes)
+                        .build();
+                int son = soundPool.load("Level_passed.wav", 1);
+                soundPool.play(son, 1, 1, 0, 0, 1);
+                soundPool.release();
+            }
             // Augmenter colonne et ligne en fonction du niveau et nombre de bombes
             // à faire
 
