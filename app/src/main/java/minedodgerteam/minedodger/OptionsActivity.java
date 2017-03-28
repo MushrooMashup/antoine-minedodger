@@ -221,7 +221,65 @@ public class OptionsActivity extends AppCompatActivity
         }
         sonLvlUpBool = Boolean.parseBoolean(sonLvlUpString);
 
-        choixLangue = (Spinner) findViewById(R.id.spinner);
+        choixLangue = (Spinner) findViewById(R.id.spinner);//R.id.SpinnerFiles
+        /* ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, fileList());
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        choixLangue.setAdapter(adapter);
+        String fileName = (String) choixLangue.getSelectedItem();
+        
+        // if there is a selected file, then read it
+if (choixLangue != null) {
+    try {
+        //open the file and retrieve the inputStream
+        InputStream inputStream = openFileInput(fileName);
+        if (inputStream != null) {
+            // open a reader on the inputStream
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            
+            // String to use to store read lines
+            String str;
+            StringBuilder buf = new StringBuilder();
+            
+            // Read the file
+            while ((str = reader.readLine()) != null) {
+                buf.append(str + "\r\n");
+            }
+            // Close the reader
+            reader.close();
+            // Close the inputStream
+            inputStream.close();
+            // Affect the text to the textView
+            textViewFile.setText(buf.toString());
+        }
+    } catch (java.io.FileNotFoundException e) {
+        Toast.makeText(this, "FileNotFoundException", Toast.LENGTH_LONG);
+    } catch (IOException e) {
+        Toast.makeText(this, "FileNotFoundException", Toast.LENGTH_LONG);
+    }
+}
+        ECRITURE
+        String fileNameStr="MyFileName";
+String fileContentStr="The content of the file …";
+try {
+    
+    // To open you can choose the mode MODE_PRIVATE, MODE_APPEND, 
+    // MODE_WORLD_READABLE, MODE_WORLD_WRITEABLE
+    // This is the creation mode (Private, World Readable et World Writable), 
+    // Append is used to open the file and write at its end 
+    FileOutputStream fos= openFileOutput(fileNameStr, Context.MODE_PRIVATE);
+    // Open the writer
+    OutputStreamWriter outputStreamWriter=new OutputStreamWriter(fos);
+    // Write
+    outputStreamWriter.write(fileContentStr);
+    // Close streams
+        outputStreamWriter.close();
+        fos.close();
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+        */
         choixLangue.setOnItemSelectedListener (new LangueChoisie());
         //Remplissage de la liste déroulante avec le tableau de chaines de caractères du fichier strings.xml
         ArrayAdapter <CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.listeLangues,android.R.layout.simple_spinner_item);
